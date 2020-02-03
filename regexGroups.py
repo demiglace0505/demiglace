@@ -1,6 +1,8 @@
 #! /usr/bin/python3
 
-#Groups are created in regex strings with parenthesis
+#This is a simple python sample that shows the capabilities
+#of regex including grouping and also the use of |?*+{} symbols
+#Note that Groups are created in regex strings using parenthesis
 
 
 import re
