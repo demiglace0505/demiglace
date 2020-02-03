@@ -1,6 +1,9 @@
 #! /usr/bin/python3
+#This is a sample python function that checks if a given set of numbers
+#is in the Philippine format xxxx-xxx-xxxx
+#Note that this is the "primitive way" of pattern finding, as the better
+#and easier way is to use regex
 
-#Function for checking if the phone number is Philippine format (xxxx-xxx-xxxx)
 
 def isPhoneNumber(text):
 	#check if 13 digits
@@ -39,7 +42,7 @@ print(isPhoneNumber('415-555-4242'))
 print('Yahallo Yahallo is this a phone number')
 print(isPhoneNumber('Yahallo Yahallo'))
 
-
+######################################
 #Finding phone number in a text body
 
 message = 'Call me at 0917-123-4567 or 0999-876-5432 tomorrow. 415-555-9999 is my office.'
