@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\kuchai\Documents\demiglace\debugging.py", line 6, in <module>
+    raise Exception('This is a sample error message')
+Exception: This is a sample error message
+Traceback (most recent call last):
+  File "C:\Users\kuchai\Documents\demiglace\debugging.py", line 9, in <module>
+    raise Exception('This is a sample error message')
+Exception: This is a sample error message
+Traceback (most recent call last):
+  File "C:\Users\kuchai\Documents\demiglace\debugging.py", line 9, in <module>
+    raise Exception('This is a sample error message')
+Exception: This is a sample error message
