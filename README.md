@@ -1,7 +1,9 @@
-# Welcome to my GitHub!
+# 🐍 🐰 🎧 🍀 🌟 Welcome!
 
-This is my personal GitHub page for storing and version tracking of my projects. This page will also serve as a portfolio for my little projects. Feel free to have a look around!
+Welcome to my GitHub!
 
-## 🐍 🐰 🎧 🍀 🌟Quick Links
+This is my personal GitHub page for storing and version tracking of my projects. This page also serves as a mini portfolio for my little projects. Feel free to have a look around!
 
-Try out my HTML game project here: https://demiglace0505.github.io/demiglace/
+##  Quick Links
+
+Check out this simple HTML game I made: https://demiglace0505.github.io/demiglace/
