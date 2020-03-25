@@ -1,54 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Sandbox {
 
     public static void main(String[] args) {
-        // Write your program here
-        Person ichika = new Person("Ichika");
-        Person nino = new Person("Nino");
-        Person miku = new Person("Miku");
-        Person yotsuba = new Person("Yotsuba");
-        Person itsuki = new Person("Itsuki");
-
-        ichika.printPerson();
-        nino.printPerson();
-        miku.printPerson();
-        yotsuba.printPerson();
-        itsuki.printPerson();
-
-        ichika.growOlder();
-        ichika.growOlder();
-
-        for (int i = nino.returnAge(); i < 20; i++) {
-            nino.growOlder();
-        }
+        ArrayList<Person> persons = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
         
-        nino.setHeight(159);
-        nino.setWeight(50);
+        while(true) {
+            System.out.print("Enter name and age separated by comma: ");
+            String input = scanner.nextLine();
+            if (input.isEmpty()) {
+                break;
+            }
+            String[] splitted = input.split(",") ;
+            String name = splitted[0];
+            int age = Integer.valueOf(splitted[1]);
+            
+            persons.add(new Person(name, age));
+        }
+        System.out.println("What is the age limit?");
+        int ageLimit = Integer.valueOf(scanner.nextLine());
         
         System.out.println("");
-        System.out.println("Using toString:");
-        System.out.println(nino);
-
-        System.out.println("Using getName():");
-        if (ichika.isOfLegalAge()) {
-            System.out.print(ichika.getName() + " is of legal age");
-        } else {
-            System.out.print(ichika.getName() + " is underage");
-        }
-
-        System.out.println("");
-
-        if (nino.isOfLegalAge()) {
-            System.out.print(nino.getName() + " is of legal age: ");
-        } else {
-            System.out.print(nino.getName() + " is underage");
-        }
-        System.out.println("");
         
-        //BMI
-        itsuki.setWeight(50);
-        itsuki.setHeight(159);
+        for (Person person : persons) {
+            if (person.getAge() >= ageLimit ) {
+                System.out.println(person);
+            }
+        }     
         
-        System.out.println(itsuki.getName() + ", BMI is " + itsuki.bodyMassIndex());
+        
+        
     }
+      
 }

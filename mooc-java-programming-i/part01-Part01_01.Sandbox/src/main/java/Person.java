@@ -14,8 +14,8 @@ public class Person {
     private int weight;
     private int height;
     
-    public Person(String initialName){
-        this.age = 0;
+    public Person(String initialName, int initialAge){
+        this.age = initialAge;
         this.name = initialName;
         this.weight = 0;
         this.height = 0;
@@ -58,9 +58,12 @@ public class Person {
     }
     
     public String toString() {
-        return this.name + ", age " + this.age + " years, body mass index is " + bodyMassIndex();
+        return this.name + ", age " + this.age + " years";
     }
     
+    public int getAge(){
+        return this.age;
+    }
     
     
 }
