@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -5,33 +6,46 @@ public class Sandbox {
 
     public static void main(String[] args) {
         ArrayList<Person> persons = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
         
-        while(true) {
-            System.out.print("Enter name and age separated by comma: ");
-            String input = scanner.nextLine();
-            if (input.isEmpty()) {
-                break;
-            }
-            String[] splitted = input.split(",") ;
-            String name = splitted[0];
-            int age = Integer.valueOf(splitted[1]);
-            
-            persons.add(new Person(name, age));
+        Person ichika = new Person("Ichika", 5, 5, 1990);
+        System.out.println(ichika);
+
+        SimpleDate date = new SimpleDate(5,5,1991);
+        Person nino = new Person("Nino", date);
+        System.out.println(nino);
+        
+        System.out.println("Ichika older than Nino? " + ichika.olderThan(nino));
+
+        SimpleDate p1 = new SimpleDate(1, 1, 2000);
+        SimpleDate p2 = new SimpleDate(1, 1, 2000);
+        SimpleDate p3 = new SimpleDate(12, 12, 2012);
+        SimpleDate p4 = p1;
+        
+        if (p1.equals(p1)) {
+            System.out.println("variables p1 and p1 are equal");
+        } else {
+            System.out.println("variables p1 and p1 are NOT equal");
         }
-        System.out.println("What is the age limit?");
-        int ageLimit = Integer.valueOf(scanner.nextLine());
         
-        System.out.println("");
+        if (p1.equals(p2)) {
+            System.out.println("variables p1 and p2 are equal");
+        } else {
+            System.out.println("variables p1 and p2 are NOT equal");
+        }
         
-        for (Person person : persons) {
-            if (person.getAge() >= ageLimit ) {
-                System.out.println(person);
-            }
-        }     
+        if (p1.equals(p3)) {
+            System.out.println("variables p1 and p3 are equal");
+        } else {
+            System.out.println("variables p1 and p3 are NOT equal");
+        }
         
+        if (p1.equals(p4)) {
+            System.out.println("variables p1 and p4 are equal");
+        } else {
+            System.out.println("variables p1 and p4 are NOT equal");
+        }
         
-        
+
     }
-      
+
 }
