@@ -6,11 +6,11 @@ import org.junit.*;
 @Points("01-01")
 public class SandboxTest {
 
-    @Rule
-    public MockStdio io = new MockStdio();
-
-    @Test
-    public void freePoints() {
-    }
+//    @Rule
+//    public MockStdio io = new MockStdio();
+//
+//    @Test
+//    public void freePoints() {
+//    }
 
 }

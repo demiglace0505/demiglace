@@ -1,4 +1,9 @@
 AmusementParkRide.class
-Person.class
+Calculator.class
+GradeRegister.class
+WordSet.class
 SimpleDate.class
+WordSetInterface.class
 Sandbox.class
+GradeInterface.class
+Person.class
